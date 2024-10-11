@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Starr Weather App☁️</h1>
+      <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+       <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
+         
+      </main>
+    <footer>
+      Coded by
+      <a href="https://github.com/Starr016" target="_blank">Lesedi Kocha</a> on
+      <a href="https://github.com/Starr016/Starr-weather-app" target="_blank"
+        >Github</a
+      >
+      and is hosted by
+      <a href="https://starr-weather-app.netlify.app/" target="_blank"
+        >Netlify</a
+      >
+    </footer>
+  </body>
+  <script src="src/index.js"></script>
+</html>
