@@ -1,5 +1,5 @@
 function displayWeather(response) {
-  let temperatureElement = document.querySelector("#weather-info-temp");
+  let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
@@ -86,7 +86,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-let searchFormElement = document.querySelector("#search-box");
+let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Miami");
